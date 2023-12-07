@@ -1,0 +1,128 @@
+
+
+/* ======================================================== 
+    BLEU : fenetre >= 1024px
+    VERTE : fenetre >= 480px
+    ROUGE : fenetre < 480px
+===========================================================*/
+
+body {
+    background-color: blue;
+    display: flex;
+  }
+
+.small{ 
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+.medium{
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+.large{
+    width: auto;
+    height: 80%;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+  
+  /* Styles pour une largeur inférieure à 480px (rouge) */
+  @media screen and (max-width: 479px) {
+    body {
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .small{ 
+        width: auto;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+    
+    .medium{
+        width: auto;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+    
+    .large{
+        width: auto;
+        height: 80%;
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+  }
+  
+
+
+
+  /* Styles pour une largeur comprise entre 480px et 1023px (verte) */
+  @media screen and (min-width: 480px) and (max-width: 1023px) {
+    body {
+      background-color: green;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .small{ 
+        width: 66%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .medium{
+        width: 33%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .large{
+        width: auto;
+        height: 80%;
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+  }
+
+
+
+
+  .small{
+    border: 2px solid black;
+  }
+
+  .medium{
+    border: 2px solid black;
+  }
+
+  .large{
+    border: 2px solid black;
+  }
